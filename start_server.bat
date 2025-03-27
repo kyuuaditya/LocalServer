@@ -1,7 +1,8 @@
 @echo off
 :loop
-cd C:\AdityaOpenServer
+python C:\_codes_Github\LocalServer\ip_fetch.py
+@REM cd C:\AdityaOpenServer
+cd C:\Users\Aditya\Pictures\Screenshots
 python -m http.server 8008
-python C:\_codes_Github\AdityaOpenServer\ip_fetch.py
 pause
 goto loop
